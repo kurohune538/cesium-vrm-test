@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>VRM in Cesium.js with OSC</title>
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.103/Build/Cesium/Cesium.js"></script>
+
+    <link href="https://cesium.com/downloads/cesiumjs/releases/1.103/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <script async="" src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.148.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.148.0/examples/jsm/",
+          "@pixiv/three-vrm": "three-vrm.module.js"
+        }
+      }
+    </script>
+    <style>@import url(https://cesium.com/downloads/cesiumjs/releases/1.103/Build/Cesium/Widgets/widgets.css);
+      html,
+      body,
+      #cesiumContainer {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }</style>
+  </head>
+  <body>
+    <div id="cesiumContainer"></div>
+  </body>
+  <script src="/cesium-three-test.e31bb0bc.js"></script>
+</html>
